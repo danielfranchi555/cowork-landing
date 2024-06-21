@@ -35,15 +35,21 @@ export const Choose = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-10 ">
+    <div className="flex flex-col gap-10 mt-28 ">
       <section className="flex flex-col justify-center items-center gap-2 mt-20  md:flex-row ">
-        <p className="font-semibold flex gap-2 text-3xl md:text-5xl  ">
+        <p className="font-semibold flex  items-center justify-center gap-2 text-2xl md:text-5xl  ">
           Why choose
-          <Image src={rectangle} width={180} height={180} alt="img" />
+          <Image
+            src={rectangle}
+            width={"auto"}
+            height={"auto"}
+            className="w-[130px] md:w-[200px]"
+            alt="img"
+          />
         </p>
-        <p className="font-semibold text-3xl md:text-5xl ">Cowork</p>
+        <p className="font-semibold text-2xl md:text-5xl ">Cowork</p>
       </section>
-      <section className="flex flex-col gap-6 md:flex-row">
+      <section className="flex flex-col gap-6 md:flex-row mt-10">
         {skills.map((skill, index) => (
           <div
             key={index}
@@ -66,7 +72,9 @@ export const Choose = () => {
               />
             </div>
             <p className="font-bold">{skill.title}</p>
-            <p className="text-center text-[15px]">{skill.description}</p>
+            <p className="text-center text-[14px] text-pretty ">
+              {skill.description}
+            </p>
           </div>
         ))}
       </section>

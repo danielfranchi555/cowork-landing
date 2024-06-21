@@ -12,7 +12,7 @@ export default function Home() {
         <Navbar />
         <Hero />
       </header>
-      <main className="flex flex-col gap-16 mt-22">
+      <main className="flex flex-col  w-[95%] mx-auto md:w-[95%] md:mx-auto ">
         <Companies />
         <Choose />
         <ExploreCowork />
