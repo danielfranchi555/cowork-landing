@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import image from "../../../../public/images/choose/img-choose.png";
-import membership from "../../../../public/images/choose/membership.svg";
-import Planetspaces from "../../../../public/images/choose/Planetspaces.svg";
-import pricing from "../../../../public/images/choose/pricing.svg";
-import svg1 from "../../../../public/images/choose/svg-1.svg";
-import svg2 from "../../../../public/images/choose/svg-2.svg";
-import svg3 from "../../../../public/images/choose/svg-3.svg";
-import rectangle from "../../../../public/images/choose/rectangle-1.svg";
+import image from "../../../public/images/choose/img-choose.png";
+import membership from "../../../public/images/choose/membership.svg";
+import Planetspaces from "../../../public/images/choose/Planetspaces.svg";
+import pricing from "../../../public/images/choose/pricing.svg";
+import svg1 from "../../../public/images/choose/svg-1.svg";
+import svg2 from "../../../public/images/choose/svg-2.svg";
+import svg3 from "../../../public/images/choose/svg-3.svg";
+import rectangle from "../../../public/images/choose/rectangle-1.svg";
 
 export const Choose = () => {
   const skills = [

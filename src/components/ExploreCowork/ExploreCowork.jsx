@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import image from "../../../../public/images/explore/rectangle.svg";
-import video from "../../../../public/images/explore/Imagevideo.png";
+import image from "../../../public/images/explore/rectangle.svg";
+import video from "../../../public/images/explore/Imagevideo.png";
 
 const ExploreCowork = () => {
   return (

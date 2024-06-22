@@ -19,7 +19,7 @@ const Navbar = () => {
         >
           Cowork
         </h2>
-        <div className="bg-[#1D1E1C] md:hidden  rounded-full">
+        <div className="bg-[#1D1E1C] md:hidden rounded-full px-[6px]">
           {toggle ? (
             <IoIosClose
               className=" px-2"

@@ -1,9 +1,11 @@
+import { Choose } from "@/components/Choose/Choose";
+import Clients from "@/components/Clients/Clients";
+import Companies from "@/components/Companies/Companies";
+import ExploreCowork from "@/components/ExploreCowork/ExploreCowork";
+import { Hero } from "@/components/Hero/Hero";
+import Navbar from "@/components/Navbar/Navbar";
+import Statistics from "@/components/Statistics/Statistics";
 import Image from "next/image";
-import Navbar from "./components/Navbar/Navbar";
-import { Hero } from "./components/Hero/Hero";
-import Companies from "./components/Companies/Companies";
-import { Choose } from "./components/Choose/Choose";
-import ExploreCowork from "./components/ExploreCowork/ExploreCowork";
 
 export default function Home() {
   return (
@@ -12,10 +14,12 @@ export default function Home() {
         <Navbar />
         <Hero />
       </header>
-      <main className="flex flex-col  w-[95%] mx-auto md:w-[95%] md:mx-auto ">
+      <main className="flex flex-col w-[95%]  mx-auto md:w-[95%] md:mx-auto ">
         <Companies />
         <Choose />
         <ExploreCowork />
+        <Statistics />
+        <Clients />
       </main>
     </>
   );

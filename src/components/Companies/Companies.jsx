@@ -1,9 +1,9 @@
 import React from "react";
-import companie1 from "../../../../public/images/companies/_logocompanie-2.svg";
-import companie2 from "../../../../public/images/companies/_logocompanie-3.svg";
-import companie3 from "../../../../public/images/companies/_logocompanie-4.svg";
-import companie4 from "../../../../public/images/companies/_logocompanie-5.svg";
-import companie5 from "../../../../public/images/companies/_logocompanie-6.svg";
+import companie1 from "../../../public/images/companies/_logocompanie-2.svg";
+import companie2 from "../../../public/images/companies/_logocompanie-3.svg";
+import companie3 from "../../../public/images/companies/_logocompanie-4.svg";
+import companie4 from "../../../public/images/companies/_logocompanie-5.svg";
+import companie5 from "../../../public/images/companies/_logocompanie-6.svg";
 import Image from "next/image";
 
 const Companies = () => {
