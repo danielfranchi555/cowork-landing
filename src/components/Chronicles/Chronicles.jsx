@@ -1,5 +1,6 @@
 import React from "react";
 import rectangle from "../../../public/images/insights/rectangle-3.svg";
+
 import image1 from "../../../public/images/insights/image-1.png";
 import image2 from "../../../public/images/insights/image-2.png";
 import image3 from "../../../public/images/insights/image-3.png";
