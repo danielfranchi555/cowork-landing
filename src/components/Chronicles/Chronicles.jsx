@@ -3,7 +3,6 @@ import React from "react";
 import rectangle from "../../../public/images/insights/rectangle-3.svg";
 import imageOne from "../../../public/images/insights/image-1.png";
 import imageTwo from "../../../public/images/insights/image-2.png";
-import imageThree from "../../../public/images/insights/image-3.png";
 
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -27,7 +26,6 @@ export const Chronicles = () => {
       title: "Talk",
       description: "Tech Talk: The Backbone of Cowork's Seamless Experience",
       time: " 10 min read",
-      image: imageThree,
     },
   ];
   return (
