@@ -1,9 +1,10 @@
 import React from "react";
-import rectangle from "../../../public/images/insights/rectangle-3.svg";
 
-import image1 from "../../../public/images/insights/image-1.png";
-import image2 from "../../../public/images/insights/image-2.png";
-import image3 from "../../../public/images/insights/image-3.png";
+import rectangle from "../../../public/images/insights/rectangle-3.svg";
+import imageOne from "../../../public/images/insights/image-1.png";
+import imageTwo from "../../../public/images/insights/image-2.png";
+import imageThree from "../../../public/images/insights/image-3.png";
+
 import { IoIosArrowForward } from "react-icons/io";
 
 import Image from "next/image";
@@ -14,19 +15,19 @@ export const Chronicles = () => {
       title: "Trending",
       description: "Navigating the Future: Trends in Modern Coworking Spaces",
       time: " 7 min read",
-      image: image1,
+      image: imageOne,
     },
     {
       title: "Productivity",
       description: "Mastering Productivity: Tips from Cowork's High Achievers",
       time: " 5 min read",
-      image: image2,
+      image: imageTwo,
     },
     {
       title: "Talk",
       description: "Tech Talk: The Backbone of Cowork's Seamless Experience",
       time: " 10 min read",
-      image: image3,
+      image: imageThree,
     },
   ];
   return (
