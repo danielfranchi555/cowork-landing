@@ -23,7 +23,7 @@ export const Footer = () => {
             Suscribe
           </button>
         </form>
-        <p className="text-[15px]">
+        <p className="text-[13px] ">
           By subscribing you agree to with our Privacy Policy and provide
           consent to receive updates from our company.
         </p>
