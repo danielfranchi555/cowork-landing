@@ -1,9 +1,13 @@
 import { Choose } from "@/components/Choose/Choose";
+import { Chronicles } from "@/components/Chronicles/Chronicles";
 import Clients from "@/components/Clients/Clients";
 import Companies from "@/components/Companies/Companies";
 import ExploreCowork from "@/components/ExploreCowork/ExploreCowork";
+import { Footer } from "@/components/Footer/Footer";
 import { Hero } from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
+import { Privacy } from "@/components/Privacy/Privacy";
+import Roadmap from "@/components/Roadmap/Roadmap";
 import Statistics from "@/components/Statistics/Statistics";
 import Image from "next/image";
 
@@ -20,6 +24,10 @@ export default function Home() {
         <ExploreCowork />
         <Statistics />
         <Clients />
+        <Roadmap />
+        <Chronicles />
+        <Footer />
+        <Privacy />
       </main>
     </>
   );
