@@ -6,11 +6,13 @@ import svg1 from "../../../public/images/choose/svg-1.svg";
 import svg2 from "../../../public/images/choose/svg-2.svg";
 import svg3 from "../../../public/images/choose/svg-3.svg";
 import svg4 from "../../../public/images/choose/svg-4.svg";
+import FadeRight from "../Transitions/FadeRight/FadeRight";
+import FadeLeft from "../Transitions/FadeLeft/FadeLeft";
 
 const Statistics = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center md:flex-row mt-28 gap-6">
-      <div className="flex flex-col gap-4 md:w-[50%]  md:text-start md:gap-8">
+    <div className="flex flex-col items-center justify-center text-center md:flex-row mt-28 gap-6 ">
+      <FadeLeft className="flex flex-col gap-4 md:w-[100%]  md:text-start md:gap-8">
         <span className="font-bold text-[13px]">COWORK IN NUMBERS</span>
         <h3 className="text-2xl font-semibold md:text-5xl">
           Transformative Statistics That Speak Volumes
@@ -61,16 +63,16 @@ const Statistics = () => {
             <p className="text-[13px]">Renewable Energy Sources</p>
           </div>
         </section>
-      </div>
-      <div className="md:w-[50%]">
+      </FadeLeft>
+      <FadeRight className="md:w-[100%] border ">
         <Image
           src={coworkImage}
-          width={"auto"}
-          height={"auto"}
+          width={700}
+          height={700}
           alt="cowork-image"
-          className="rounded-xl w-full md:w-full"
+          className="rounded-xl "
         />
-      </div>
+      </FadeRight>
     </div>
   );
 };

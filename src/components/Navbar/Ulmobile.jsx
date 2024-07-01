@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export const Ulmobile = ({ toggle }) => {
-  const ul = ["About", "Pricing", "Blog", "Events"];
+  const ul = ["About", "Clients", "Blog", "Contact"];
   return (
     <ul
       className={` font-bold flex flex-col gap-10 mt-10 text-4xl ${
@@ -18,7 +18,7 @@ export const Ulmobile = ({ toggle }) => {
             animate={{ opacity: 1, y: 0 }} // Propiedades animadas (visible y en posición original)
             transition={{ duration: 0.5, delay: index * 0.1 }} // Duración y retardo escalonado
           >
-            {item}
+            <a href={`#${item}`}>{item}</a>
           </motion.li>
         </>
       ))}

@@ -6,6 +6,9 @@ import client4 from "../../../public/images/clients/client-4.svg";
 import client5 from "../../../public/images/clients/client-5.svg";
 import Image from "next/image";
 import Carrousel from "../Carrousel/Carrousel";
+import MotionTransition from "../Transitions/FadeTransition";
+import FadeIn from "../Transitions/FadeIn/FadeIn";
+import Transition from "./Transition/Transition";
 
 const Clients = () => {
   const clients = [
@@ -51,18 +54,24 @@ const Clients = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-10  items-center justify-center mt-20 md:mt-40 ">
+    <div
+      id="Clients"
+      className="flex flex-col gap-10  items-center justify-center mt-20 md:mt-40 "
+    >
       <div className="text-center flex flex-col gap-4">
-        <span className="font-bold text-[13px]">COWORK IN WORDS</span>
-        <h4 className="text-2xl font-semibold md:text-5xl">
+        <Transition className="font-bold text-[13px]" delay={0.4}>
+          COWORK IN WORDS
+        </Transition>
+        <Transition className="text-2xl font-semibold md:text-5xl" delay={0.6}>
           Heart it from our Clients
-        </h4>
+        </Transition>
       </div>
       <section className="hidden sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 md:gap-4 ">
         {clients.map((client, index) => (
-          <div
+          <FadeIn
             key={index}
-            className={`bg-[#F1F1F1] flex flex-col items-center justify-center px-4 py-8 text-center gap-4 rounded-xl`}
+            delayCard={index * 0.4}
+            className={`bg-[#F1F1F1] flex flex-col items-center justify-center px-4 py-8 text-center gap-4 rounded-xl border h-full`}
           >
             <Image
               src={client.image}
@@ -81,7 +90,7 @@ const Clients = () => {
               <p className="font-semibold text-[14px]">{client.name}</p>
               <p className=" text-[14px]">{client.rol}</p>
             </div>
-          </div>
+          </FadeIn>
         ))}
       </section>
       <Carrousel clients={clients} />

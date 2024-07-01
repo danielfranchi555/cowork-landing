@@ -8,6 +8,7 @@ import imageThree from "../../../public/images/insights/cardImage-3.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 import Image from "next/image";
+import Transition from "./Transition/Transition";
 
 export const Chronicles = () => {
   const cards = [
@@ -31,10 +32,18 @@ export const Chronicles = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center gap-20 mt-40 text-center">
+    <div
+      id="Blog"
+      className="flex flex-col items-center justify-center gap-20 mt-40 text-center"
+    >
       <section className=" flex flex-col gap-4 md:justify-center md:items-center">
-        <span className="font-bold text-[13px]">COWORK CHRONICLES</span>
-        <h4 className="text-2xl font-semibold md:text-5xl flex flex-col gap-2">
+        <Transition className="font-bold text-[13px]" delay={0.4}>
+          COWORK CHRONICLES
+        </Transition>
+        <Transition
+          delay={0.6}
+          className="text-2xl font-semibold md:text-5xl flex flex-col gap-2"
+        >
           Insights, Innovation, and
           <span className="flex items-center justify-center">
             {" "}
@@ -47,21 +56,19 @@ export const Chronicles = () => {
             />
             Inspiration
           </span>
-        </h4>
-        <p className="text-[14px] md:w-[500px] md:text-center">
+        </Transition>
+        <Transition
+          delay={0.8}
+          className="text-[14px] md:w-[500px] md:text-center"
+        >
           Stay updated on the latest trends in coworking, productivity tips, and
           success stories that define the Cowork experience.
-        </p>
+        </Transition>
       </section>
-      <section className="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <section className="flex flex-col items-center   justify-center gap-4 md:grid md:grid-cols-3">
         {cards.map((item, index) => (
           <div key={index} className=" text-start flex flex-col gap-4">
-            <Image
-              src={item.image}
-              width={"auto"}
-              height={"auto"}
-              alt="image"
-            />
+            <Image src={item.image} width={600} height={600} alt="image" />
             <div className="flex items-center gap-4">
               <span className="bg-[#A6E8F6] px-2 py-2 rounded-md text-[14px] font-bold">
                 {item.title}

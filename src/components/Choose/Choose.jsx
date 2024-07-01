@@ -8,6 +8,8 @@ import svg1 from "../../../public/images/choose/svg-1.svg";
 import svg2 from "../../../public/images/choose/svg-2.svg";
 import svg3 from "../../../public/images/choose/svg-3.svg";
 import rectangle from "../../../public/images/choose/rectangle-1.svg";
+import FadeUp from "../Transitions/FadeUp/FadeUp";
+import MotionTransition from "../Transitions/FadeTransition";
 
 export const Choose = () => {
   const skills = [
@@ -36,8 +38,8 @@ export const Choose = () => {
 
   return (
     <div className="flex flex-col gap-10 mt-28 ">
-      <section className="flex flex-col justify-center items-center gap-2 mt-20  md:flex-row ">
-        <p className="font-semibold flex  items-center justify-center gap-2 text-2xl md:text-5xl  ">
+      <div className="flex flex-col justify-center items-center gap-2 mt-20  md:flex-row ">
+        <MotionTransition className="font-semibold flex  items-center justify-center gap-2 text-2xl md:text-5xl  ">
           Why choose
           <Image
             src={rectangle}
@@ -46,12 +48,14 @@ export const Choose = () => {
             className="w-[130px] md:w-[200px]"
             alt="img"
           />
-        </p>
-        <p className="font-semibold text-2xl md:text-5xl ">Cowork</p>
-      </section>
+        </MotionTransition>
+        <MotionTransition className="font-semibold text-2xl md:text-5xl ">
+          Cowork
+        </MotionTransition>
+      </div>
       <section className="flex flex-col gap-6 md:flex-row mt-10">
         {skills.map((skill, index) => (
-          <div
+          <FadeUp
             key={index}
             className="flex flex-col gap-2 items-center justify-center px-4"
           >
@@ -75,7 +79,7 @@ export const Choose = () => {
             <p className="text-center text-[14px] text-pretty ">
               {skill.description}
             </p>
-          </div>
+          </FadeUp>
         ))}
       </section>
     </div>

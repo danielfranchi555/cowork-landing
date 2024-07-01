@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div className=" overflow-hidden">
       <header>
         <Navbar />
         <Hero />
@@ -29,6 +29,6 @@ export default function Home() {
         <Footer />
         <Privacy />
       </main>
-    </>
+    </div>
   );
 }

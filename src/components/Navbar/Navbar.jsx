@@ -7,7 +7,7 @@ import MotionTransition from "@/app/utils/motionTransition/MotionTransition";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const ul = ["About", "Pricing", "Blog", "Events"];
+  const ul = ["About", "Clients", "Blog", "Contact"];
 
   return (
     <div className={`py-4 px-4 ${toggle ? "bg-[#1D1E1C]" : "bg-white"}`}>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-4 ">
           {ul.map((item, index) => (
             <li className="font-light cursor-pointer" key={index}>
-              {item}
+              <a href={`#${item}`}>{item}</a>
             </li>
           ))}
         </ul>
@@ -50,7 +50,6 @@ const Navbar = () => {
 
       {/* UL MOBILE */}
       {toggle && <Ulmobile toggle={toggle} />}
-
       {/* UL MOBILE */}
     </div>
   );

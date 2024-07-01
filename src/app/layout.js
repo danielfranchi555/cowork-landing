@@ -1,5 +1,6 @@
 import { OpenSans } from "./config/fonts";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata = {
   title: "Cowork",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`md:w-[95%] md:mx-auto w-full ${OpenSans.className}`}>
         {children}
+        <Toaster />
       </body>
     </html>
   );

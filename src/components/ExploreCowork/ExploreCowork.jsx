@@ -1,13 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import image from "../../../public/images/explore/rectangle.svg";
-import video from "../../../public/images/explore/Imagevideo.png";
+import MotionTransition from "./Transition/Fade";
 
 const ExploreCowork = () => {
   return (
     <div className="flex flex-col gap-6 items-center text-center mt-40">
-      <span className="font-bold text-[13px]">A VIRTUAL TOUR</span>
-      <div className=" flex flex-col gap-2">
+      <MotionTransition className="font-bold text-[13px]" delay={0.5}>
+        A VIRTUAL TOUR
+      </MotionTransition>
+      <MotionTransition className=" flex flex-col gap-2" delay={0.7}>
         <h4 className="text-2xl font-semibold md:text-5xl">
           Explore Cowork Through Our{" "}
         </h4>
@@ -22,16 +24,19 @@ const ExploreCowork = () => {
           />
           Lens
         </p>
-      </div>
-      <p className="text-[14px] max-w-[800px]">
+      </MotionTransition>
+      <MotionTransition className="text-[14px] max-w-[800px]" delay={0.9}>
         Experience the essence of Cowork before setting foot in our dynamic
         spaces. Our immersive video tour gives You a sneak peek into the vibrant
         atmosphere, outing. edge facilities, and collaborative energy that
         define the Cowork experience.
-      </p>
-      <button className="border-[1px] text-[14px] border-black font-bold px-6 py-[12px] max-w-max rounded-full">
+      </MotionTransition>
+      <MotionTransition
+        className="border-[1px] text-[14px] border-black font-bold px-6 py-[12px] max-w-max rounded-full"
+        delay={1}
+      >
         Explore Spaces
-      </button>
+      </MotionTransition>
       <iframe
         src={`https://www.youtube.com/embed/IxRVa1DbSAg`}
         frameBorder="0"
