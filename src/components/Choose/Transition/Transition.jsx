@@ -6,10 +6,10 @@ const Transition = ({ children, className, delay }) => {
   const fadeIn = {
     hidden: {
       opacity: 0,
-      translateY: "20%", // Desplazamiento desde abajo
+      translateY: "40%", // Desplazamiento desde abajo
       transition: {
         type: "tween",
-        duration: 0.5,
+        duration: 0.1,
         ease: [0.25, 0.1, 0.25, 1.0],
       },
     },
@@ -18,7 +18,7 @@ const Transition = ({ children, className, delay }) => {
       translateY: "0%", // Posición final en el lugar
       transition: {
         type: "tween",
-        duration: 1.5,
+        duration: 2.5, // Reducir duración para una animación más rápida
         delay: delay,
         ease: [0.25, 0.1, 0.25, 1.0],
       },

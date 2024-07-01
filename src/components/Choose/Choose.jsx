@@ -58,7 +58,7 @@ export const Choose = () => {
         {skills.map((skill, index) => (
           <Transition
             key={index}
-            delay={index}
+            delay={index * 0.6} // Reducción del delay entre cada elemento
             className="flex flex-col gap-2 items-center justify-center px-4"
           >
             <div className="relative">

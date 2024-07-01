@@ -2,10 +2,11 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const MotionTransition = ({ children, className, delay }) => {
+const Transition = ({ children, className, delay }) => {
   const fadeIn = {
     hidden: {
       opacity: 0,
+      translateY: "10%", // Desplazamiento desde abajo
       transition: {
         type: "tween",
         duration: 0.1,
@@ -14,9 +15,10 @@ const MotionTransition = ({ children, className, delay }) => {
     },
     visible: {
       opacity: 1,
+      translateY: "0%", // Posición final en el lugar
       transition: {
         type: "tween",
-        duration: 2.5,
+        duration: 0.2, // Reducir duración para una animación más rápida
         delay: delay,
         ease: [0.25, 0.1, 0.25, 1.0],
       },
@@ -46,15 +48,7 @@ const MotionTransition = ({ children, className, delay }) => {
         {children}
       </motion.div>
     </div>
-    // <motion.div
-    //   initial="hidden"
-    //   animate="visible"
-    //   variants={fadeIn}
-    //   className={className}
-    // >
-    //   {children}
-    // </motion.div>
   );
 };
 
-export default MotionTransition;
+export default Transition;
