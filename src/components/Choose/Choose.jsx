@@ -10,6 +10,7 @@ import svg3 from "../../../public/images/choose/svg-3.svg";
 import rectangle from "../../../public/images/choose/rectangle-1.svg";
 import FadeUp from "../Transitions/FadeUp/FadeUp";
 import MotionTransition from "../Transitions/FadeTransition";
+import Transition from "./Transition/Transition";
 
 export const Choose = () => {
   const skills = [
@@ -55,8 +56,9 @@ export const Choose = () => {
       </div>
       <section className="flex flex-col gap-6 md:flex-row mt-10">
         {skills.map((skill, index) => (
-          <FadeUp
+          <Transition
             key={index}
+            delay={index}
             className="flex flex-col gap-2 items-center justify-center px-4"
           >
             <div className="relative">
@@ -79,7 +81,7 @@ export const Choose = () => {
             <p className="text-center text-[14px] text-pretty ">
               {skill.description}
             </p>
-          </FadeUp>
+          </Transition>
         ))}
       </section>
     </div>

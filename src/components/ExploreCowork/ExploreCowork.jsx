@@ -5,7 +5,7 @@ import MotionTransition from "./Transition/Fade";
 
 const ExploreCowork = () => {
   return (
-    <div className="flex flex-col gap-6 items-center text-center mt-40">
+    <div className="flex flex-col gap-6 items-center text-center mt-48">
       <MotionTransition className="font-bold text-[13px]" delay={0.5}>
         A VIRTUAL TOUR
       </MotionTransition>
